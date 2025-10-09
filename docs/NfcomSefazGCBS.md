@@ -1,0 +1,26 @@
+# NuvemFiscalClient::NfcomSefazGCBS
+
+## Properties
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+| **p_cbs** | **Float** | Aliquota da CBS. |  |
+| **g_dif** | [**NfcomSefazDif**](NfcomSefazDif.md) |  | [optional] |
+| **g_dev_trib** | [**NfcomSefazDevTrib**](NfcomSefazDevTrib.md) |  | [optional] |
+| **g_red** | [**NfcomSefazRed**](NfcomSefazRed.md) |  | [optional] |
+| **v_cbs** | **Float** | Valor da CBS. |  |
+
+## Example
+
+```ruby
+require 'nuvem_fiscal_client'
+
+instance = NuvemFiscalClient::NfcomSefazGCBS.new(
+  p_cbs: null,
+  g_dif: null,
+  g_dev_trib: null,
+  g_red: null,
+  v_cbs: null
+)
+```
+
