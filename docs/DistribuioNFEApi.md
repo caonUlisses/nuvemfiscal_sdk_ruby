@@ -42,7 +42,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DistribuioNFEApi.new
-id = 'id_example' # String | ID único do documento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do documento gerado pela API.
 
 begin
   # Baixar PDF do documento
@@ -75,7 +75,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do documento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do documento gerado pela API. |  |
 
 ### Return type
 
@@ -116,7 +116,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DistribuioNFEApi.new
-id = 'id_example' # String | ID único do documento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do documento gerado pela API.
 
 begin
   # Baixar XML do documento
@@ -149,7 +149,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do documento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do documento gerado pela API. |  |
 
 ### Return type
 
@@ -188,7 +188,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DistribuioNFEApi.new
-id = 'id_example' # String | ID único da distribuição de NF-e gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da distribuição de NF-e gerada pela API.
 
 begin
   # Consultar distribuição
@@ -221,7 +221,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da distribuição de NF-e gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da distribuição de NF-e gerada pela API. |  |
 
 ### Return type
 
@@ -262,7 +262,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DistribuioNFEApi.new
-id = 'id_example' # String | ID único do documento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do documento gerado pela API.
 
 begin
   # Consultar documento
@@ -295,7 +295,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do documento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do documento gerado pela API. |  |
 
 ### Return type
 
@@ -317,7 +317,7 @@ end
 
 Consultar manifestação
 
-Consulta os detalhes de uma manifestação de NF-e já existente. Forneça o ID único obtido de uma requisição de manifestação ou de listagem de manifestações e a Nuvem Fiscal irá retornar as informações da manifestação correspondente.
+Consulta os detalhes de uma manifestação de NF-e já existente. Forneça o ID único obtido de uma requisição de manifestação ou de listagem de manifestações e a API irá retornar as informações da manifestação correspondente.
 
 ### Examples
 
@@ -336,7 +336,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DistribuioNFEApi.new
-id = 'id_example' # String | ID único da manifestação gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da manifestação gerado pela API.
 
 begin
   # Consultar manifestação
@@ -369,7 +369,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da manifestação gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da manifestação gerado pela API. |  |
 
 ### Return type
 
@@ -725,7 +725,7 @@ end
 
 Listar notas sem manifestação
 
-No processo de distribuição de DF-e, as notas fiscais eletrônicas (NF-e)  são inicialmente disponibilizadas de forma resumida. Para obter o XML  completo, o destinatário deve manifestar a ciência da operação e,  posteriormente, uma manifestação conclusiva dentro de um prazo legal.    Para facilitar essa gestão e o cumprimento dos prazos legais de manifestação,  a API da Nuvem Fiscal permite listar as notas que ainda não  possuem manifestação, ajudando os usuários a identificar rapidamente as  notas que necessitam de ação.    O usuário pode optar por listar apenas as notas que não possuem manifestação  conclusiva ou que não possuem qualquer tipo de manifestação. Essa flexibilidade  permite um controle mais preciso e adequado às necessidades operacionais  de cada empresa.    Os documentos são retornados ordenados decrescentemente pela data de  distribuição, permitindo uma visualização clara e organizada das notas  mais recentes.    **Cenários de uso:**  * Identificar rapidamente as notas que ainda precisam de manifestação para obter o XML completo.  * Listar todas as notas fiscais eletrônicas que foram registradas com ciência da operação, mas ainda não possuem uma manifestação conclusiva (confirmação da operação, desconhecimento da operação ou operação não realizada).  * Listar todas as notas fiscais eletrônicas que não possuem nenhum tipo de manifestação registrada (nem ciência da operação, nem manifestação conclusiva).
+No processo de distribuição de DF-e, as notas fiscais eletrônicas (NF-e)  são inicialmente disponibilizadas de forma resumida. Para obter o XML  completo, o destinatário deve manifestar a ciência da operação e,  posteriormente, uma manifestação conclusiva dentro de um prazo legal.    Para facilitar essa gestão e o cumprimento dos prazos legais de manifestação,  a API permite listar as notas que ainda não  possuem manifestação, ajudando os usuários a identificar rapidamente as  notas que necessitam de ação.    O usuário pode optar por listar apenas as notas que não possuem manifestação  conclusiva ou que não possuem qualquer tipo de manifestação. Essa flexibilidade  permite um controle mais preciso e adequado às necessidades operacionais  de cada empresa.    Os documentos são retornados ordenados decrescentemente pela data de  distribuição, permitindo uma visualização clara e organizada das notas  mais recentes.    **Cenários de uso:**  * Identificar rapidamente as notas que ainda precisam de manifestação para obter o XML completo.  * Listar todas as notas fiscais eletrônicas que foram registradas com ciência da operação, mas ainda não possuem uma manifestação conclusiva (confirmação da operação, desconhecimento da operação ou operação não realizada).  * Listar todas as notas fiscais eletrônicas que não possuem nenhum tipo de manifestação registrada (nem ciência da operação, nem manifestação conclusiva).
 
 ### Examples
 

@@ -55,7 +55,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 
 begin
   # Baixar PDF do cancelamento
@@ -88,7 +88,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 
 ### Return type
 
@@ -127,7 +127,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 
 begin
   # Baixar PDF do encerramento
@@ -160,7 +160,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 
 ### Return type
 
@@ -199,7 +199,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do evento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do evento gerado pela API.
 
 begin
   # Baixar PDF do evento
@@ -232,7 +232,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do evento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do evento gerado pela API. |  |
 
 ### Return type
 
@@ -271,7 +271,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 opts = {
   logotipo: true # Boolean | Imprime o documento com logotipo, desde que esteja cadastrado na empresa.
 }
@@ -307,7 +307,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 | **logotipo** | **Boolean** | Imprime o documento com logotipo, desde que esteja cadastrado na empresa. | [optional][default to false] |
 
 ### Return type
@@ -347,7 +347,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 
 begin
   # Baixar XML do cancelamento
@@ -380,7 +380,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 
 ### Return type
 
@@ -419,7 +419,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 
 begin
   # Baixar XML do encerramento
@@ -452,7 +452,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 
 ### Return type
 
@@ -491,7 +491,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do evento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do evento gerado pela API.
 
 begin
   # Baixar XML do evento
@@ -524,7 +524,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do evento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do evento gerado pela API. |  |
 
 ### Return type
 
@@ -565,7 +565,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 
 begin
   # Baixar XML do MDF-e processado
@@ -598,7 +598,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 
 ### Return type
 
@@ -639,7 +639,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único da MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da MDF-e gerado pela API.
 
 begin
   # Baixar XML do MDF-e
@@ -672,7 +672,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da MDF-e gerado pela API. |  |
 
 ### Return type
 
@@ -711,7 +711,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único da MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da MDF-e gerado pela API.
 
 begin
   # Baixar XML do Protocolo da SEFAZ
@@ -744,7 +744,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da MDF-e gerado pela API. |  |
 
 ### Return type
 
@@ -785,7 +785,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 opts = {
   body: NuvemFiscalClient::MdfePedidoCancelamento.new # MdfePedidoCancelamento | Dados do cancelamento.
 }
@@ -821,7 +821,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 | **body** | [**MdfePedidoCancelamento**](MdfePedidoCancelamento.md) | Dados do cancelamento. | [optional] |
 
 ### Return type
@@ -861,7 +861,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 
 begin
   # Consultar o cancelamento do MDF-e
@@ -894,7 +894,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 
 ### Return type
 
@@ -933,7 +933,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 
 begin
   # Consultar encerramento do MDF-e
@@ -966,7 +966,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 
 ### Return type
 
@@ -1005,7 +1005,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do evento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do evento gerado pela API.
 
 begin
   # Consultar evento do MDF-e
@@ -1038,7 +1038,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do evento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do evento gerado pela API. |  |
 
 ### Return type
 
@@ -1060,7 +1060,7 @@ end
 
 Consultar lote de MDF-e
 
-Consulta os detalhes de um lote já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de lotes e a Nuvem Fiscal irá retornar as informações do lote correspondente.
+Consulta os detalhes de um lote já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de lotes e a API irá retornar as informações do lote correspondente.
 
 ### Examples
 
@@ -1079,7 +1079,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do lote gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do lote gerado pela API.
 
 begin
   # Consultar lote de MDF-e
@@ -1112,7 +1112,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do lote gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do lote gerado pela API. |  |
 
 ### Return type
 
@@ -1134,7 +1134,7 @@ end
 
 Consultar manifesto
 
-Consulta os detalhes de um manifesto já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de manifestos e a Nuvem Fiscal irá retornar as informações do manifesto correspondente.
+Consulta os detalhes de um manifesto já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de manifestos e a API irá retornar as informações do manifesto correspondente.
 
 ### Examples
 
@@ -1153,7 +1153,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 
 begin
   # Consultar manifesto
@@ -1186,7 +1186,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 
 ### Return type
 
@@ -1280,7 +1280,7 @@ end
 
 Consulta do Status do Serviço na SEFAZ Autorizadora
 
-Consulta do status do serviço prestado pelo Portal da Secretaria de Fazenda Estadual.    A Nuvem Fiscal mantém a última consulta em cache por 5 minutos, evitando sobrecarregar desnecessariamente os servidores da SEFAZ (conforme orientação do MOC - versão 3.0.0a, item 4.6.3). Dessa forma, você poderá chamar esse endpoint quantas vezes quiser, sem preocupar-se em ter o seu CNPJ bloqueado por consumo indevido (Rejeição 656).
+Consulta do status do serviço prestado pelo Portal da Secretaria de Fazenda Estadual.    A API mantém a última consulta em cache por 5 minutos, evitando sobrecarregar desnecessariamente os servidores da SEFAZ (conforme orientação do MOC - versão 3.0.0a, item 4.6.3). Dessa forma, você poderá chamar esse endpoint quantas vezes quiser, sem preocupar-se em ter o seu CNPJ bloqueado por consumo indevido (Rejeição 656).
 
 ### Examples
 
@@ -1525,7 +1525,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 body = NuvemFiscalClient::MdfePedidoEncerramento.new({uf: 'uf_example', codigo_municipio: 'codigo_municipio_example'}) # MdfePedidoEncerramento | 
 
 begin
@@ -1559,7 +1559,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 | **body** | [**MdfePedidoEncerramento**](MdfePedidoEncerramento.md) |  |  |
 
 ### Return type
@@ -1601,7 +1601,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 body = NuvemFiscalClient::MdfePedidoInclusaoCondutor.new({nome_condutor: 'nome_condutor_example', cpf_condutor: 'cpf_condutor_example'}) # MdfePedidoInclusaoCondutor | 
 
 begin
@@ -1635,7 +1635,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 | **body** | [**MdfePedidoInclusaoCondutor**](MdfePedidoInclusaoCondutor.md) |  |  |
 
 ### Return type
@@ -1677,7 +1677,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 body = NuvemFiscalClient::MdfePedidoInclusaoDfe.new # MdfePedidoInclusaoDfe | 
 
 begin
@@ -1711,7 +1711,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 | **body** | [**MdfePedidoInclusaoDfe**](MdfePedidoInclusaoDfe.md) |  |  |
 
 ### Return type
@@ -1910,7 +1910,7 @@ end
 
 Sincroniza dados no MDF-e a partir da SEFAZ
 
-Realiza a sincronização dos dados a partir da consulta da situação atual da MDF-e na Base de Dados do Portal da Secretaria de Fazenda Estadual.    **Cenários de uso**:  * Sincronizar um manifesto que se encontra com o status `erro` na Nuvem Fiscal, mas está autorizado na SEFAZ (útil em casos de erros de transmissão com a SEFAZ, como instabilidades e timeouts).  * Sincronizar um manifesto que se encontra com o status `autorizado`na Nuvem Fiscal, mas está cancelado ou encerrado na SEFAZ.  * Sincronizar todos os eventos de Cancelamento, Encerramento, Inclusão de condutor e Inclusão de DF-e de um manifesto que porventura não tenham sido feitos a partir da Nuvem Fiscal.    **Informações adicionais**:  - Cota: <a href=\"/docs/limites#dfe-eventos\">dfe-eventos</a>  - Consumo: 1 unidade por evento sincronizado ou requisição.
+Realiza a sincronização dos dados a partir da consulta da situação atual da MDF-e na Base de Dados do Portal da Secretaria de Fazenda Estadual.    **Cenários de uso**:  * Sincronizar um manifesto que se encontra com o status `erro` na API, mas está autorizado na SEFAZ (útil em casos de erros de transmissão com a SEFAZ, como instabilidades e timeouts).  * Sincronizar um manifesto que se encontra com o status `autorizado`na API, mas está cancelado ou encerrado na SEFAZ.  * Sincronizar todos os eventos de Cancelamento, Encerramento, Inclusão de condutor e Inclusão de DF-e de um manifesto que porventura não tenham sido feitos a partir da API.    **Informações adicionais**:  - Cota: <a href=\"/docs/limites#dfe-eventos\">dfe-eventos</a>  - Consumo: 1 unidade por evento sincronizado ou requisição.
 
 ### Examples
 
@@ -1929,7 +1929,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::MdfeApi.new
-id = 'id_example' # String | ID único do MDF-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do MDF-e gerado pela API.
 
 begin
   # Sincroniza dados no MDF-e a partir da SEFAZ
@@ -1962,7 +1962,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do MDF-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do MDF-e gerado pela API. |  |
 
 ### Return type
 

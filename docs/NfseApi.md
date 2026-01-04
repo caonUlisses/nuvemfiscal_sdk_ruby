@@ -46,7 +46,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfseApi.new
-id = 'id_example' # String | ID único da NFS-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFS-e gerado pela API.
 opts = {
   logotipo: true, # Boolean | Imprime o documento com logotipo, desde que esteja cadastrado na empresa.
   mensagem_rodape: 'mensagem_rodape_example' # String | Imprime mensagem no rodapé do documento.    O caractere `|` (pipe) poderá ser utilizado para definir a quantidade e o alinhamento das mensagens.    **Exemplos de Uso:**  * `\"esquerda\"`  * `\"esquerda|centro\"`  * `\"esquerda|centro|direita\"`  * `\"|centro\"`, `\"|centro|\"`  * `\"|centro|direita\"`  * `\"||direita\"`  * `\"esquerda||direita\"`    Default: `\"\"`
@@ -83,7 +83,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFS-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFS-e gerado pela API. |  |
 | **logotipo** | **Boolean** | Imprime o documento com logotipo, desde que esteja cadastrado na empresa. | [optional][default to false] |
 | **mensagem_rodape** | **String** | Imprime mensagem no rodapé do documento.    O caractere &#x60;|&#x60; (pipe) poderá ser utilizado para definir a quantidade e o alinhamento das mensagens.    **Exemplos de Uso:**  * &#x60;\&quot;esquerda\&quot;&#x60;  * &#x60;\&quot;esquerda|centro\&quot;&#x60;  * &#x60;\&quot;esquerda|centro|direita\&quot;&#x60;  * &#x60;\&quot;|centro\&quot;&#x60;, &#x60;\&quot;|centro|\&quot;&#x60;  * &#x60;\&quot;|centro|direita\&quot;&#x60;  * &#x60;\&quot;||direita\&quot;&#x60;  * &#x60;\&quot;esquerda||direita\&quot;&#x60;    Default: &#x60;\&quot;\&quot;&#x60; | [optional] |
 
@@ -124,7 +124,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfseApi.new
-id = 'id_example' # String | ID único da NFS-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFS-e gerado pela API.
 
 begin
   # Baixar XML do evento de cancelamento
@@ -157,7 +157,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFS-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFS-e gerado pela API. |  |
 
 ### Return type
 
@@ -196,7 +196,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfseApi.new
-id = 'id_example' # String | ID único da NFS-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFS-e gerado pela API.
 
 begin
   # Baixar XML da DPS
@@ -229,7 +229,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFS-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFS-e gerado pela API. |  |
 
 ### Return type
 
@@ -268,7 +268,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfseApi.new
-id = 'id_example' # String | ID único da NFS-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFS-e gerado pela API.
 
 begin
   # Baixar XML da NFS-e processada
@@ -301,7 +301,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFS-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFS-e gerado pela API. |  |
 
 ### Return type
 
@@ -342,7 +342,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfseApi.new
-id = 'id_example' # String | ID único da NFS-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFS-e gerado pela API.
 opts = {
   body: NuvemFiscalClient::NfsePedidoCancelamento.new # NfsePedidoCancelamento | 
 }
@@ -378,7 +378,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFS-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFS-e gerado pela API. |  |
 | **body** | [**NfsePedidoCancelamento**](NfsePedidoCancelamento.md) |  | [optional] |
 
 ### Return type
@@ -401,7 +401,7 @@ end
 
 Cidades atendidas
 
-Fornece uma relação completa de todos os municípios atendidos pela Nuvem Fiscal.
+Fornece uma relação completa de todos os municípios atendidos pela API.
 
 ### Examples
 
@@ -489,7 +489,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfseApi.new
-id = 'id_example' # String | ID único da NFS-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFS-e gerado pela API.
 
 begin
   # Consultar o cancelamento da NFS-e
@@ -522,7 +522,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFS-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFS-e gerado pela API. |  |
 
 ### Return type
 
@@ -544,7 +544,7 @@ end
 
 Consultar lote de NFS-e
 
-Consulta os detalhes de um lote já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de lotes e a Nuvem Fiscal irá retornar as informações do lote correspondente.
+Consulta os detalhes de um lote já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de lotes e a API irá retornar as informações do lote correspondente.
 
 ### Examples
 
@@ -563,7 +563,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfseApi.new
-id = 'id_example' # String | ID único do lote gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do lote gerado pela API.
 
 begin
   # Consultar lote de NFS-e
@@ -596,7 +596,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do lote gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do lote gerado pela API. |  |
 
 ### Return type
 
@@ -692,7 +692,7 @@ end
 
 Consultar NFS-e
 
-Consulta os detalhes de uma NFS-e já existente. Forneça o ID único obtido de uma requisição de criação ou de listagem de notas e a Nuvem Fiscal irá retornar as informações da nota correspondente.
+Consulta os detalhes de uma NFS-e já existente. Forneça o ID único obtido de uma requisição de criação ou de listagem de notas e a API irá retornar as informações da nota correspondente.
 
 ### Examples
 
@@ -711,7 +711,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfseApi.new
-id = 'id_example' # String | ID único da NFS-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFS-e gerado pela API.
 
 begin
   # Consultar NFS-e
@@ -744,7 +744,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFS-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFS-e gerado pela API. |  |
 
 ### Return type
 
@@ -1238,7 +1238,7 @@ end
 
 Sincroniza dados na NFS-e a partir da Prefeitura
 
-Realiza a sincronização dos dados a partir da consulta da situação atual da NFS-e na prefeitura.    **Cenários de uso**:  * Sincronizar uma nota que se encontra com o status `processando` na Nuvem Fiscal, mas está autorizada na prefeitura;  * Sincronizar uma nota que se encontra com o status `erro` na Nuvem Fiscal, mas está autorizada na prefeitura (útil em casos de erros de transmissão, como instabilidades e timeouts);  * Sincronizar uma nota que se encontra com o status `autorizada`na Nuvem Fiscal, mas está cancelada na prefeitura.    **Informações adicionais**:  - Cota: <a href=\"/docs/limites#dfe-eventos\">dfe-eventos</a>  - Consumo: 1 unidade por evento sincronizado ou requisição.
+Realiza a sincronização dos dados a partir da consulta da situação atual da NFS-e na prefeitura.    **Cenários de uso**:  * Sincronizar uma nota que se encontra com o status `processando` na API, mas está autorizada na prefeitura;  * Sincronizar uma nota que se encontra com o status `erro` na API, mas está autorizada na prefeitura (útil em casos de erros de transmissão, como instabilidades e timeouts);  * Sincronizar uma nota que se encontra com o status `autorizada`na API, mas está cancelada na prefeitura.    **Informações adicionais**:  - Cota: <a href=\"/docs/limites#dfe-eventos\">dfe-eventos</a>  - Consumo: 1 unidade por evento sincronizado ou requisição.
 
 ### Examples
 
@@ -1257,7 +1257,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfseApi.new
-id = 'id_example' # String | ID único da NFS-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFS-e gerado pela API.
 opts = {
   body: NuvemFiscalClient::NfsePedidoSincronizacao.new # NfsePedidoSincronizacao | 
 }
@@ -1293,7 +1293,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFS-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFS-e gerado pela API. |  |
 | **body** | [**NfsePedidoSincronizacao**](NfsePedidoSincronizacao.md) |  | [optional] |
 
 ### Return type

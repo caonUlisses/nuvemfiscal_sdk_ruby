@@ -10,8 +10,6 @@
 | **v_ibs** | **Float** | Valor do IBS. |  |
 | **g_cbs** | [**NfeSefazGCBS**](NfeSefazGCBS.md) |  |  |
 | **g_trib_regular** | [**NfeSefazTribRegular**](NfeSefazTribRegular.md) |  | [optional] |
-| **g_ibs_cred_pres** | [**NfeSefazCredPres**](NfeSefazCredPres.md) |  | [optional] |
-| **g_cbs_cred_pres** | [**NfeSefazCredPres**](NfeSefazCredPres.md) |  | [optional] |
 | **g_trib_compra_gov** | [**NfeSefazTribCompraGov**](NfeSefazTribCompraGov.md) |  | [optional] |
 
 ## Example
@@ -26,8 +24,6 @@ instance = NuvemFiscalClient::NfeSefazCIBS.new(
   v_ibs: null,
   g_cbs: null,
   g_trib_regular: null,
-  g_ibs_cred_pres: null,
-  g_cbs_cred_pres: null,
   g_trib_compra_gov: null
 )
 ```

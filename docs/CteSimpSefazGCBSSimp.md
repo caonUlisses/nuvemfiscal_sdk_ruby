@@ -4,7 +4,7 @@
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **p_cbs** | **Float** | Aliquota da CBS. |  |
+| **p_cbs** | **Float** | Aliquota da CBS (em percentual). |  |
 | **g_dif** | [**CteSimpSefazDifSimp**](CteSimpSefazDifSimp.md) |  | [optional] |
 | **g_dev_trib** | [**CteSimpSefazDevTribSimp**](CteSimpSefazDevTribSimp.md) |  | [optional] |
 | **g_red** | [**CteSimpSefazRedSimp**](CteSimpSefazRedSimp.md) |  | [optional] |

@@ -8,7 +8,7 @@
 | **c_trib_mun** | **String** | Código de tributação municipal do ISSQN. | [optional] |
 | **cnae** | **String** | Código CNAE (Classificação Nacional de Atividades Econômicas). | [optional] |
 | **x_desc_serv** | **String** | Descrição completa do serviço prestado.    Os caracteres acentuados poderão ser alterados para caracteres sem acentuação. |  |
-| **c_nbs** | **String** | Código NBS (Nomenclatura Brasileira de Serviços, Intangíveis e outras Operações que produzam Variações no Patrimônio) correspondente ao serviço prestado. | [optional] |
+| **c_nbs** | **String** | Código NBS correspondente ao serviço prestado, seguindo a versão 2.0, conforme Anexo B. | [optional] |
 | **c_nat_op** | **String** | Código de natureza da operação.    **Atenção**: Para emissões pelo Sistema Nacional NFS-e, esse campo é ignorado. | [optional] |
 | **c_sit_trib** | **String** | Código de situação tributária.    **Atenção**: Para emissões pelo Sistema Nacional NFS-e, esse campo é ignorado. | [optional] |
 

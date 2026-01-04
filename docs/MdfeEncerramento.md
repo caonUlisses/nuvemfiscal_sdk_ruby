@@ -7,7 +7,7 @@
 | **data_encerramento** | **Date** | Data que o manifesto foi encerrado. | [optional] |
 | **uf** | **String** | UF de encerramento do manifesto. | [optional] |
 | **codigo_municipio** | **String** | Código do Município de encerramento do manifesto. | [optional] |
-| **id** | **String** | ID único gerado pela Nuvem Fiscal para este evento. | [optional] |
+| **id** | **String** | ID único gerado pela API para este evento. | [optional] |
 | **ambiente** | **String** | Identificação do ambiente. | [optional] |
 | **status** | **String** | Status do Evento. | [optional] |
 | **autor** | [**DfeAutorEvento**](DfeAutorEvento.md) |  | [optional] |

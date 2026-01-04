@@ -7,7 +7,7 @@
 | **codigo_municipio_carrega** | **String** | Código do Município de carregamento. | [optional] |
 | **municipio_carrega** | **String** | Nome do Município de carregamento. | [optional] |
 | **documentos** | [**Array&lt;MdfeDocumentoVinculado&gt;**](MdfeDocumentoVinculado.md) | Informações dos documentos fiscais vinculados ao manifesto. | [optional] |
-| **id** | **String** | ID único gerado pela Nuvem Fiscal para este evento. | [optional] |
+| **id** | **String** | ID único gerado pela API para este evento. | [optional] |
 | **ambiente** | **String** | Identificação do ambiente. | [optional] |
 | **status** | **String** | Status do Evento. | [optional] |
 | **autor** | [**DfeAutorEvento**](DfeAutorEvento.md) |  | [optional] |

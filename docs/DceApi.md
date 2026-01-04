@@ -40,7 +40,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DceApi.new
-id = 'id_example' # String | ID único da DC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da DC-e gerado pela API.
 
 begin
   # Baixar PDF do DACE
@@ -73,7 +73,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da DC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da DC-e gerado pela API. |  |
 
 ### Return type
 
@@ -112,7 +112,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DceApi.new
-id = 'id_example' # String | ID único da DC-e gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da DC-e gerada pela API.
 
 begin
   # Baixar XML do cancelamento
@@ -145,7 +145,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da DC-e gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da DC-e gerada pela API. |  |
 
 ### Return type
 
@@ -186,7 +186,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DceApi.new
-id = 'id_example' # String | ID único da DC-e gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da DC-e gerada pela API.
 
 begin
   # Baixar XML da DC-e processada
@@ -219,7 +219,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da DC-e gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da DC-e gerada pela API. |  |
 
 ### Return type
 
@@ -260,7 +260,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DceApi.new
-id = 'id_example' # String | ID único da DC-e gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da DC-e gerada pela API.
 
 begin
   # Baixar XML da DC-e
@@ -293,7 +293,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da DC-e gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da DC-e gerada pela API. |  |
 
 ### Return type
 
@@ -332,7 +332,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DceApi.new
-id = 'id_example' # String | ID único da DC-e gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da DC-e gerada pela API.
 
 begin
   # Baixar XML do Protocolo da SEFAZ
@@ -365,7 +365,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da DC-e gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da DC-e gerada pela API. |  |
 
 ### Return type
 
@@ -406,7 +406,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DceApi.new
-id = 'id_example' # String | ID único da DC-e gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da DC-e gerada pela API.
 opts = {
   body: NuvemFiscalClient::DcePedidoCancelamento.new # DcePedidoCancelamento | 
 }
@@ -442,7 +442,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da DC-e gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da DC-e gerada pela API. |  |
 | **body** | [**DcePedidoCancelamento**](DcePedidoCancelamento.md) |  | [optional] |
 
 ### Return type
@@ -482,7 +482,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DceApi.new
-id = 'id_example' # String | ID único da DC-e gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da DC-e gerada pela API.
 
 begin
   # Consultar o cancelamento da DC-e
@@ -515,7 +515,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da DC-e gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da DC-e gerada pela API. |  |
 
 ### Return type
 
@@ -537,7 +537,7 @@ end
 
 Consultar DC-e
 
-Consulta os detalhes de uma DC-e já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de DC-e e a Nuvem Fiscal irá retornar as informações da DC-e correspondente.
+Consulta os detalhes de uma DC-e já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de DC-e e a API irá retornar as informações da DC-e correspondente.
 
 ### Examples
 
@@ -556,7 +556,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::DceApi.new
-id = 'id_example' # String | ID único da DC-e gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da DC-e gerada pela API.
 
 begin
   # Consultar DC-e
@@ -589,7 +589,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da DC-e gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da DC-e gerada pela API. |  |
 
 ### Return type
 
@@ -611,7 +611,7 @@ end
 
 Consulta do Status do Serviço na SEFAZ Autorizadora
 
-Consulta do status do serviço prestado pelo Portal da Secretaria de Fazenda Estadual.    A Nuvem Fiscal mantém a última consulta em cache por 5 minutos, evitando sobrecarregar desnecessariamente os servidores da SEFAZ.
+Consulta do status do serviço prestado pelo Portal da Secretaria de Fazenda Estadual.    A API mantém a última consulta em cache por 5 minutos, evitando sobrecarregar desnecessariamente os servidores da SEFAZ.
 
 ### Examples
 

@@ -4,7 +4,7 @@
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **p_ibsuf** | **Float** | Aliquota do IBS de competência das UF. |  |
+| **p_ibsuf** | **Float** | Aliquota do IBS de competência das UF (em percentual). |  |
 | **g_dif** | [**NfcomSefazDif**](NfcomSefazDif.md) |  | [optional] |
 | **g_dev_trib** | [**NfcomSefazDevTrib**](NfcomSefazDevTrib.md) |  | [optional] |
 | **g_red** | [**NfcomSefazRed**](NfcomSefazRed.md) |  | [optional] |

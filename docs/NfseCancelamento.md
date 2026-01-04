@@ -4,7 +4,7 @@
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do cancelamento gerado automaticamente pela Nuvem Fiscal. | [optional] |
+| **id** | **String** | ID único do cancelamento gerado automaticamente pela API. | [optional] |
 | **status** | **String** |  | [optional] |
 | **codigo** | **String** |  | [optional] |
 | **motivo** | **String** |  | [optional] |

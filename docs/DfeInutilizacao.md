@@ -11,7 +11,7 @@
 | **numero_inicial** | **Integer** |  | [optional] |
 | **numero_final** | **Integer** |  | [optional] |
 | **justificativa** | **String** |  | [optional] |
-| **id** | **String** | ID único gerado pela Nuvem Fiscal para este evento. | [optional] |
+| **id** | **String** | ID único gerado pela API para este evento. | [optional] |
 | **ambiente** | **String** | Identificação do ambiente. | [optional] |
 | **status** | **String** | Status do Evento. | [optional] |
 | **autor** | [**DfeAutorEvento**](DfeAutorEvento.md) |  | [optional] |

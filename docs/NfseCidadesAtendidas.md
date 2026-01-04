@@ -4,8 +4,8 @@
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **count** | **Integer** | Quantidade de cidades atendidas pela Nuvem Fiscal. | [optional] |
-| **data** | **Array&lt;String&gt;** | Lista com os códigos IBGE das cidades atendidas pela Nuvem Fiscal. | [optional] |
+| **count** | **Integer** | Quantidade de cidades atendidas pela API. | [optional] |
+| **data** | **Array&lt;String&gt;** | Lista com os códigos IBGE das cidades atendidas pela API. | [optional] |
 
 ## Example
 

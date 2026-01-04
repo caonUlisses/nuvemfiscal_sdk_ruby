@@ -4,7 +4,7 @@
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **p_ibs_mun** | **Float** | Aliquota do IBS Municipal. |  |
+| **p_ibs_mun** | **Float** | Aliquota do IBS Municipal (em percentual). |  |
 | **g_dif** | [**CteSefazDif**](CteSefazDif.md) |  | [optional] |
 | **g_dev_trib** | [**CteSefazDevTrib**](CteSefazDevTrib.md) |  | [optional] |
 | **g_red** | [**CteSefazRed**](CteSefazRed.md) |  | [optional] |

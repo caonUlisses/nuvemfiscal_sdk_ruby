@@ -33,6 +33,7 @@ All URIs are relative to *https://api.nuvemfiscal.com.br*
 | [**excluir_certificado_empresa**](EmpresaApi.md#excluir_certificado_empresa) | **DELETE** /empresas/{cpf_cnpj}/certificado | Deletar certificado |
 | [**excluir_empresa**](EmpresaApi.md#excluir_empresa) | **DELETE** /empresas/{cpf_cnpj} | Deletar empresa |
 | [**excluir_logotipo_empresa**](EmpresaApi.md#excluir_logotipo_empresa) | **DELETE** /empresas/{cpf_cnpj}/logotipo | Deletar logotipo |
+| [**listar_certificados**](EmpresaApi.md#listar_certificados) | **GET** /empresas/certificados | Listar certificados |
 | [**listar_empresas**](EmpresaApi.md#listar_empresas) | **GET** /empresas | Listar empresas |
 
 
@@ -2160,6 +2161,90 @@ nil (empty response body)
 - **Accept**: Not defined
 
 
+## listar_certificados
+
+> <EmpresaCertificadoListagem> listar_certificados(opts)
+
+Listar certificados
+
+Retorna a lista dos certificados associadas à sua conta. Os certificados são retornados ordenados pela data da criação, com as mais recentes aparecendo primeiro.
+
+### Examples
+
+```ruby
+require 'time'
+require 'nuvem_fiscal_client'
+# setup authorization
+NuvemFiscalClient.configure do |config|
+  # Configure API key authorization: jwt
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  # config.api_key_prefix['Authorization'] = 'Bearer'
+
+  # Configure OAuth2 access token for authorization: oauth2
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = NuvemFiscalClient::EmpresaApi.new
+opts = {
+  top: 56, # Integer | Limite no número de objetos a serem retornados pela API, entre 1 e 100.
+  skip: 56, # Integer | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada.
+  inlinecount: true, # Boolean | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação.
+  expires_in: 56, # Integer | Filtrar certificados que expiram dentro de X dias.    Informe um número inteiro correspondente à quantidade de dias até o vencimento.  Exemplos:   - expires_in=30 -&gt; certificados que vencem nos próximos 30 dias.   - expires_in=7  -&gt; certificados que vencem nos próximos 7 dias.
+  include_expired: true # Boolean | Indicar se os certificados já vencidos devem ser incluídos no resultado.    Valores aceitos:   - `true`: incluir certificados vencidos.   - `false`: exibir apenas certificados válidos.
+}
+
+begin
+  # Listar certificados
+  result = api_instance.listar_certificados(opts)
+  p result
+rescue NuvemFiscalClient::ApiError => e
+  puts "Error when calling EmpresaApi->listar_certificados: #{e}"
+end
+```
+
+#### Using the listar_certificados_with_http_info variant
+
+This returns an Array which contains the response data, status code and headers.
+
+> <Array(<EmpresaCertificadoListagem>, Integer, Hash)> listar_certificados_with_http_info(opts)
+
+```ruby
+begin
+  # Listar certificados
+  data, status_code, headers = api_instance.listar_certificados_with_http_info(opts)
+  p status_code # => 2xx
+  p headers # => { ... }
+  p data # => <EmpresaCertificadoListagem>
+rescue NuvemFiscalClient::ApiError => e
+  puts "Error when calling EmpresaApi->listar_certificados_with_http_info: #{e}"
+end
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+| **top** | **Integer** | Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [optional][default to 10] |
+| **skip** | **Integer** | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [optional][default to 0] |
+| **inlinecount** | **Boolean** | Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [optional][default to false] |
+| **expires_in** | **Integer** | Filtrar certificados que expiram dentro de X dias.    Informe um número inteiro correspondente à quantidade de dias até o vencimento.  Exemplos:   - expires_in&#x3D;30 -&amp;gt; certificados que vencem nos próximos 30 dias.   - expires_in&#x3D;7  -&amp;gt; certificados que vencem nos próximos 7 dias. | [optional] |
+| **include_expired** | **Boolean** | Indicar se os certificados já vencidos devem ser incluídos no resultado.    Valores aceitos:   - &#x60;true&#x60;: incluir certificados vencidos.   - &#x60;false&#x60;: exibir apenas certificados válidos. | [optional][default to true] |
+
+### Return type
+
+[**EmpresaCertificadoListagem**](EmpresaCertificadoListagem.md)
+
+### Authorization
+
+[jwt](../README.md#jwt), [oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
 ## listar_empresas
 
 > <EmpresaListagem> listar_empresas(opts)
@@ -2189,7 +2274,8 @@ opts = {
   top: 56, # Integer | Limite no número de objetos a serem retornados pela API, entre 1 e 100.
   skip: 56, # Integer | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada.
   inlinecount: true, # Boolean | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação.
-  cpf_cnpj: 'cpf_cnpj_example' # String | Filtrar pelo CPF ou CNPJ da empresa.    *Utilize o valor sem máscara*.
+  cpf_cnpj: 'cpf_cnpj_example', # String | Filtrar pelo CPF ou CNPJ da empresa.    *Utilize o valor sem máscara*.
+  nome_razao_social: 'nome_razao_social_example' # String | Filtrar pelo nome ou razão social da empresa.    Esse filtro realiza uma correspondência pelo início do texto,  retornando apenas empresas cujo nome ou razão social começam com  o valor informado.    *Caso o filtro pelo CPF ou CNPJ também seja informado na requisição,  este filtro é ignorado*.
 }
 
 begin
@@ -2227,6 +2313,7 @@ end
 | **skip** | **Integer** | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [optional][default to 0] |
 | **inlinecount** | **Boolean** | Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [optional][default to false] |
 | **cpf_cnpj** | **String** | Filtrar pelo CPF ou CNPJ da empresa.    *Utilize o valor sem máscara*. | [optional] |
+| **nome_razao_social** | **String** | Filtrar pelo nome ou razão social da empresa.    Esse filtro realiza uma correspondência pelo início do texto,  retornando apenas empresas cujo nome ou razão social começam com  o valor informado.    *Caso o filtro pelo CPF ou CNPJ também seja informado na requisição,  este filtro é ignorado*. | [optional] |
 
 ### Return type
 

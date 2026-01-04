@@ -5,7 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **p_red_aliq** | **Float** | Percentual de redução de aliquota do cClassTrib. |  |
-| **p_aliq_efet** | **Float** | Aliquota Efetiva que será aplicada a Base de Calculo. |  |
+| **p_aliq_efet** | **Float** | Aliquota Efetiva que será aplicada a Base de Calculo (em percentual). |  |
 
 ## Example
 

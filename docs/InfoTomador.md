@@ -9,7 +9,7 @@
 | **cpf** | **String** | Número do CPF. | [optional] |
 | **nif** | **String** | Número de Identificação Fiscal fornecido por órgão de administração tributária no exterior. | [optional] |
 | **c_nao_nif** | **Integer** | Motivo para não informação do NIF:  * 0 - Não informado na nota de origem  * 1 - Dispensado do NIF  * 2 - Não exigência do NIF | [optional] |
-| **caepf** | **String** | Número do Cadastro de Atividade Econômica da Pessoa Física (CAEPF). | [optional] |
+| **caepf** | **String** | Número do Cadastro de Atividade Econômica da Pessoa Física (CAEPF) do tomador, intermediário ou fornecedor do serviço. | [optional] |
 | **im** | **String** | Número da inscrição municipal. | [optional] |
 | **ie** | **String** | Número da inscrição estadual.    **Atenção**: Para emissões pelo Sistema Nacional NFS-e, esse campo é ignorado. | [optional] |
 | **x_nome** | **String** | Nome/Nome Empresarial. |  |

@@ -4,7 +4,7 @@
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **p_cbs** | **Float** | Aliquota da CBS. |  |
+| **p_cbs** | **Float** | Aliquota da CBS (em percentual). |  |
 | **g_dif** | [**NfcomSefazDif**](NfcomSefazDif.md) |  | [optional] |
 | **g_dev_trib** | [**NfcomSefazDevTrib**](NfcomSefazDevTrib.md) |  | [optional] |
 | **g_red** | [**NfcomSefazRed**](NfcomSefazRed.md) |  | [optional] |

@@ -40,7 +40,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfcomApi.new
-id = 'id_example' # String | ID único da NFCom gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFCom gerado pela API.
 opts = {
   logotipo: true # Boolean | Imprime o documento com logotipo, desde que esteja cadastrado na empresa.
 }
@@ -76,7 +76,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFCom gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFCom gerado pela API. |  |
 | **logotipo** | **Boolean** | Imprime o documento com logotipo, desde que esteja cadastrado na empresa. | [optional][default to false] |
 
 ### Return type
@@ -116,7 +116,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfcomApi.new
-id = 'id_example' # String | ID único da NFCom gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFCom gerada pela API.
 
 begin
   # Baixar XML do cancelamento
@@ -149,7 +149,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFCom gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFCom gerada pela API. |  |
 
 ### Return type
 
@@ -190,7 +190,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfcomApi.new
-id = 'id_example' # String | ID único da NFCom gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFCom gerada pela API.
 
 begin
   # Baixar XML da NFCom processada
@@ -223,7 +223,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFCom gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFCom gerada pela API. |  |
 
 ### Return type
 
@@ -264,7 +264,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfcomApi.new
-id = 'id_example' # String | ID único da NFCom gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFCom gerada pela API.
 
 begin
   # Baixar XML da NFCom
@@ -297,7 +297,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFCom gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFCom gerada pela API. |  |
 
 ### Return type
 
@@ -336,7 +336,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfcomApi.new
-id = 'id_example' # String | ID único da NFCom gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFCom gerada pela API.
 
 begin
   # Baixar XML do Protocolo da SEFAZ
@@ -369,7 +369,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFCom gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFCom gerada pela API. |  |
 
 ### Return type
 
@@ -410,7 +410,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfcomApi.new
-id = 'id_example' # String | ID único da NFCom gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFCom gerada pela API.
 opts = {
   body: NuvemFiscalClient::NfcomPedidoCancelamento.new # NfcomPedidoCancelamento | 
 }
@@ -446,7 +446,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFCom gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFCom gerada pela API. |  |
 | **body** | [**NfcomPedidoCancelamento**](NfcomPedidoCancelamento.md) |  | [optional] |
 
 ### Return type
@@ -486,7 +486,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfcomApi.new
-id = 'id_example' # String | ID único da NFCom gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFCom gerada pela API.
 
 begin
   # Consultar o cancelamento da NFCom
@@ -519,7 +519,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFCom gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFCom gerada pela API. |  |
 
 ### Return type
 
@@ -541,7 +541,7 @@ end
 
 Consultar NFCom
 
-Consulta os detalhes de uma NFCom já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de NFCom e a Nuvem Fiscal irá retornar as informações da NFCom correspondente.
+Consulta os detalhes de uma NFCom já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de NFCom e a API irá retornar as informações da NFCom correspondente.
 
 ### Examples
 
@@ -560,7 +560,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfcomApi.new
-id = 'id_example' # String | ID único da NFCom gerada pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFCom gerada pela API.
 
 begin
   # Consultar NFCom
@@ -593,7 +593,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFCom gerada pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFCom gerada pela API. |  |
 
 ### Return type
 
@@ -615,7 +615,7 @@ end
 
 Consulta do Status do Serviço na SEFAZ Autorizadora
 
-Consulta do status do serviço prestado pelo Portal da Secretaria de Fazenda Estadual.    A Nuvem Fiscal mantém a última consulta em cache por 5 minutos, evitando sobrecarregar desnecessariamente os servidores da SEFAZ.
+Consulta do status do serviço prestado pelo Portal da Secretaria de Fazenda Estadual.    A API mantém a última consulta em cache por 5 minutos, evitando sobrecarregar desnecessariamente os servidores da SEFAZ.
 
 ### Examples
 

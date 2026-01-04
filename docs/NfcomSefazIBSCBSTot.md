@@ -7,6 +7,7 @@
 | **v_bcibscbs** | **Float** | Total Base de Calculo. |  |
 | **g_ibs** | [**NfcomSefazGIBS**](NfcomSefazGIBS.md) |  |  |
 | **g_cbs** | [**NfcomSefazIBSCBSTotGCBS**](NfcomSefazIBSCBSTotGCBS.md) |  |  |
+| **g_estorno_cred** | [**NfcomSefazGEstornoCred**](NfcomSefazGEstornoCred.md) |  | [optional] |
 
 ## Example
 
@@ -16,7 +17,8 @@ require 'nuvem_fiscal_client'
 instance = NuvemFiscalClient::NfcomSefazIBSCBSTot.new(
   v_bcibscbs: null,
   g_ibs: null,
-  g_cbs: null
+  g_cbs: null,
+  g_estorno_cred: null
 )
 ```
 

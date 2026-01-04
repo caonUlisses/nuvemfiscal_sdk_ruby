@@ -59,7 +59,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 opts = {
   modelo: 56, # Integer | Modelo da impressora:  * `0` - Texto  * `1` - Epson  * `2` - Bematech  * `3` - Daruma  * `4` - Vox  * `5` - Diebold  * `6` - Epson P2  * `7` - CustomPos  * `8` - Star  * `9` - Zjiang  * `10` - GPrinter  * `11` - Datecs  * `12` - Sunmi  * `13` - Externo
   colunas: 56, # Integer | Define o máximo de caracteres, em uma linha, usando a fonte normal.    Ex: 40, 42, 48, 58, 80.
@@ -97,7 +97,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 | **modelo** | **Integer** | Modelo da impressora:  * &#x60;0&#x60; - Texto  * &#x60;1&#x60; - Epson  * &#x60;2&#x60; - Bematech  * &#x60;3&#x60; - Daruma  * &#x60;4&#x60; - Vox  * &#x60;5&#x60; - Diebold  * &#x60;6&#x60; - Epson P2  * &#x60;7&#x60; - CustomPos  * &#x60;8&#x60; - Star  * &#x60;9&#x60; - Zjiang  * &#x60;10&#x60; - GPrinter  * &#x60;11&#x60; - Datecs  * &#x60;12&#x60; - Sunmi  * &#x60;13&#x60; - Externo | [optional][default to 1] |
 | **colunas** | **Integer** | Define o máximo de caracteres, em uma linha, usando a fonte normal.    Ex: 40, 42, 48, 58, 80. | [optional][default to 48] |
 | **qrcode_lateral** | **Boolean** | Imprime o QRCode na lateral do DANFCe.    OBS: não suportado por alguns modelos de impressora. | [optional][default to false] |
@@ -139,7 +139,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 
 begin
   # Baixar PDF do cancelamento
@@ -172,7 +172,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 
 ### Return type
 
@@ -211,7 +211,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único do evento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do evento gerado pela API.
 
 begin
   # Baixar PDF do evento
@@ -244,7 +244,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do evento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do evento gerado pela API. |  |
 
 ### Return type
 
@@ -283,7 +283,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único do evento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do evento gerado pela API.
 
 begin
   # Baixar PDF da inutilização
@@ -316,7 +316,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do evento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do evento gerado pela API. |  |
 
 ### Return type
 
@@ -355,7 +355,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 opts = {
   logotipo: true, # Boolean | Imprime o documento com logotipo, desde que esteja cadastrado na empresa.
   nome_fantasia: true, # Boolean | Exibe o nome fantasia do emitente, desde que esteja presente no XML da nota.
@@ -397,7 +397,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 | **logotipo** | **Boolean** | Imprime o documento com logotipo, desde que esteja cadastrado na empresa. | [optional][default to false] |
 | **nome_fantasia** | **Boolean** | Exibe o nome fantasia do emitente, desde que esteja presente no XML da nota. | [optional][default to false] |
 | **mensagem_rodape** | **String** | Imprime mensagem no rodapé do documento.    O caractere &#x60;|&#x60; (pipe) poderá ser utilizado para definir a quantidade e o alinhamento das mensagens.    **Exemplos de Uso:**  * &#x60;\&quot;esquerda\&quot;&#x60;  * &#x60;\&quot;esquerda|centro\&quot;&#x60;  * &#x60;\&quot;esquerda|centro|direita\&quot;&#x60;  * &#x60;\&quot;|centro\&quot;&#x60;, &#x60;\&quot;|centro|\&quot;&#x60;  * &#x60;\&quot;|centro|direita\&quot;&#x60;  * &#x60;\&quot;||direita\&quot;&#x60;  * &#x60;\&quot;esquerda||direita\&quot;&#x60; | [optional] |
@@ -607,7 +607,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 
 begin
   # Baixar XML do cancelamento
@@ -640,7 +640,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 
 ### Return type
 
@@ -679,7 +679,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único do evento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do evento gerado pela API.
 
 begin
   # Baixar XML do evento
@@ -712,7 +712,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do evento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do evento gerado pela API. |  |
 
 ### Return type
 
@@ -751,7 +751,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único do evento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do evento gerado pela API.
 
 begin
   # Baixar XML da inutilização
@@ -784,7 +784,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do evento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do evento gerado pela API. |  |
 
 ### Return type
 
@@ -825,7 +825,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 
 begin
   # Baixar XML da NFC-e processada
@@ -858,7 +858,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 
 ### Return type
 
@@ -899,7 +899,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 
 begin
   # Baixar XML da NFC-e
@@ -932,7 +932,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 
 ### Return type
 
@@ -971,7 +971,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 
 begin
   # Baixar XML do Protocolo da SEFAZ
@@ -1004,7 +1004,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 
 ### Return type
 
@@ -1045,7 +1045,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 opts = {
   body: NuvemFiscalClient::NfePedidoCancelamento.new # NfePedidoCancelamento | 
 }
@@ -1081,7 +1081,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 | **body** | [**NfePedidoCancelamento**](NfePedidoCancelamento.md) |  | [optional] |
 
 ### Return type
@@ -1121,7 +1121,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 
 begin
   # Consultar o cancelamento da NFC-e
@@ -1154,7 +1154,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 
 ### Return type
 
@@ -1193,7 +1193,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único do evento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do evento gerado pela API.
 
 begin
   # Consultar evento
@@ -1226,7 +1226,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do evento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do evento gerado pela API. |  |
 
 ### Return type
 
@@ -1265,7 +1265,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único do evento gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do evento gerado pela API.
 
 begin
   # Consultar a inutilização de sequência de numeração
@@ -1298,7 +1298,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do evento gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do evento gerado pela API. |  |
 
 ### Return type
 
@@ -1320,7 +1320,7 @@ end
 
 Consultar lote de NFC-e
 
-Consulta os detalhes de um lote já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de lotes e a Nuvem Fiscal irá retornar as informações do lote correspondente.
+Consulta os detalhes de um lote já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de lotes e a API irá retornar as informações do lote correspondente.
 
 ### Examples
 
@@ -1339,7 +1339,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único do lote gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único do lote gerado pela API.
 
 begin
   # Consultar lote de NFC-e
@@ -1372,7 +1372,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único do lote gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único do lote gerado pela API. |  |
 
 ### Return type
 
@@ -1394,7 +1394,7 @@ end
 
 Consultar NFC-e
 
-Consulta os detalhes de uma NFC-e já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de notas e a Nuvem Fiscal irá retornar as informações da nota correspondente.
+Consulta os detalhes de uma NFC-e já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de notas e a API irá retornar as informações da nota correspondente.
 
 ### Examples
 
@@ -1413,7 +1413,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 
 begin
   # Consultar NFC-e
@@ -1446,7 +1446,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 
 ### Return type
 
@@ -1468,7 +1468,7 @@ end
 
 Consulta do Status do Serviço na SEFAZ Autorizadora
 
-Consulta do status do serviço prestado pelo Portal da Secretaria de Fazenda Estadual.    A Nuvem Fiscal mantém a última consulta em cache por 5 minutos, evitando sobrecarregar desnecessariamente os servidores da SEFAZ (conforme orientação do MOC - versão 7.0, item 5.5.3). Dessa forma, você poderá chamar esse endpoint quantas vezes quiser, sem preocupar-se em ter o seu CNPJ bloqueado por consumo indevido (Rejeição 656).
+Consulta do status do serviço prestado pelo Portal da Secretaria de Fazenda Estadual.    A API mantém a última consulta em cache por 5 minutos, evitando sobrecarregar desnecessariamente os servidores da SEFAZ (conforme orientação do MOC - versão 7.0, item 5.5.3). Dessa forma, você poderá chamar esse endpoint quantas vezes quiser, sem preocupar-se em ter o seu CNPJ bloqueado por consumo indevido (Rejeição 656).
 
 ### Examples
 
@@ -1713,7 +1713,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 opts = {
   body: NuvemFiscalClient::DfePedidoEnvioEmail.new # DfePedidoEnvioEmail | 
 }
@@ -1749,7 +1749,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 | **body** | [**DfePedidoEnvioEmail**](DfePedidoEnvioEmail.md) |  | [optional] |
 
 ### Return type
@@ -1865,7 +1865,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-dfe_id = 'dfe_id_example' # String | ID único gerado pela Nuvem Fiscal para o documento fiscal.
+dfe_id = 'dfe_id_example' # String | ID único gerado pela API para o documento fiscal.
 opts = {
   top: 56, # Integer | Limite no número de objetos a serem retornados pela API, entre 1 e 100.
   skip: 56, # Integer | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada.
@@ -1903,7 +1903,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **dfe_id** | **String** | ID único gerado pela Nuvem Fiscal para o documento fiscal. |  |
+| **dfe_id** | **String** | ID único gerado pela API para o documento fiscal. |  |
 | **top** | **Integer** | Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [optional][default to 10] |
 | **skip** | **Integer** | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [optional][default to 0] |
 | **inlinecount** | **Boolean** | Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [optional][default to false] |
@@ -2104,7 +2104,7 @@ end
 
 Sincroniza dados na NFC-e a partir da SEFAZ
 
-Realiza a sincronização dos dados a partir da consulta da situação atual da NFC-e na Base de Dados do Portal da Secretaria de Fazenda Estadual.    **Cenários de uso**:  * Sincronizar uma nota que se encontra com o status `erro` na Nuvem Fiscal, mas está autorizada na SEFAZ (útil em casos de erros de transmissão com a SEFAZ, como instabilidades e timeouts).  * Sincronizar uma nota que se encontra com o status `autorizado`na Nuvem Fiscal, mas está cancelada na SEFAZ.  * Sincronizar todos os eventos de Cancelamento, Carta de Correção e EPEC de uma nota que porventura não tenham sido feitos a partir da Nuvem Fiscal.    **Informações adicionais**:  - Cota: <a href=\"/docs/limites#dfe-eventos\">dfe-eventos</a>  - Consumo: 1 unidade por evento sincronizado ou requisição.
+Realiza a sincronização dos dados a partir da consulta da situação atual da NFC-e na Base de Dados do Portal da Secretaria de Fazenda Estadual.    **Cenários de uso**:  * Sincronizar uma nota que se encontra com o status `erro` na API, mas está autorizada na SEFAZ (útil em casos de erros de transmissão com a SEFAZ, como instabilidades e timeouts).  * Sincronizar uma nota que se encontra com o status `autorizado`na API, mas está cancelada na SEFAZ.  * Sincronizar todos os eventos de Cancelamento, Carta de Correção e EPEC de uma nota que porventura não tenham sido feitos a partir da API.    **Informações adicionais**:  - Cota: <a href=\"/docs/limites#dfe-eventos\">dfe-eventos</a>  - Consumo: 1 unidade por evento sincronizado ou requisição.
 
 ### Examples
 
@@ -2123,7 +2123,7 @@ NuvemFiscalClient.configure do |config|
 end
 
 api_instance = NuvemFiscalClient::NfceApi.new
-id = 'id_example' # String | ID único da NFC-e gerado pela Nuvem Fiscal.
+id = 'id_example' # String | ID único da NFC-e gerado pela API.
 
 begin
   # Sincroniza dados na NFC-e a partir da SEFAZ
@@ -2156,7 +2156,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **id** | **String** | ID único da NFC-e gerado pela Nuvem Fiscal. |  |
+| **id** | **String** | ID único da NFC-e gerado pela API. |  |
 
 ### Return type
 

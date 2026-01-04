@@ -15,6 +15,7 @@
 | **cnpj_fab** | **String** | CNPJ do Fabricante da Mercadoria, obrigatório para produto em escala NÃO relevante. | [optional] |
 | **c_benef** | **String** |  | [optional] |
 | **g_cred** | [**Array&lt;NfeSefazGCred&gt;**](NfeSefazGCred.md) |  | [optional] |
+| **tp_cred_pres_ibszfm** | **Integer** | Classificação para subapuração do IBS na ZFM. | [optional] |
 | **extipi** | **String** | Código EX TIPI (3 posições). | [optional] |
 | **cfop** | **String** | Cfop. |  |
 | **u_com** | **String** | Unidade comercial. |  |
@@ -63,6 +64,7 @@ instance = NuvemFiscalClient::NfeSefazProd.new(
   cnpj_fab: null,
   c_benef: null,
   g_cred: null,
+  tp_cred_pres_ibszfm: null,
   extipi: null,
   cfop: null,
   u_com: null,

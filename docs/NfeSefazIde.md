@@ -12,6 +12,7 @@
 | **n_nf** | **Integer** | Número do Documento Fiscal. |  |
 | **dh_emi** | **Time** | Data e Hora de emissão do Documento Fiscal (AAAA-MM-DDThh:mm:ssTZD) ex.: 2012-09-01T13:00:00-03:00. |  |
 | **dh_sai_ent** | **Time** | Data e Hora da saída ou de entrada da mercadoria / produto (AAAA-MM-DDTHH:mm:ssTZD). | [optional] |
+| **d_prev_entrega** | **Date** | Data da previsão de entrega ou disponibilização do bem (AAAA-MM-DD). | [optional] |
 | **tp_nf** | **Integer** | Tipo do Documento Fiscal:  * 0 - Entrada  * 1 - Saída |  |
 | **id_dest** | **Integer** | Identificador de Local de destino da operação:  * 1 - Interna  * 2 - Interestadual  * 3 - Exterior |  |
 | **c_mun_fg** | **String** | Código do Município de Ocorrência do Fato Gerador (utilizar a tabela do IBGE). |  |
@@ -21,7 +22,7 @@
 | **c_dv** | **Integer** | Digito Verificador da Chave de Acesso da NF-e.    *Geramos automaticamente quando nenhum valor é informado.* | [optional] |
 | **tp_amb** | **Integer** | Identificação do Ambiente:  * 1 - Produção  * 2 - Homologação | [optional] |
 | **fin_nfe** | **Integer** | Finalidade da emissão da NF-e:  * 1 - NFe normal  * 2 - NFe complementar  * 3 - NFe de ajuste  * 4 - Devolução/Retorno  * 5 - Nota de crédito  * 6 - Nota de débito |  |
-| **tp_nf_debito** | **String** | Tipo de Nota de Débito:  * 01 - Transferência de créditos para Cooperativas  * 02 - Anulação de Crédito por Saídas Imunes/Isentas  * 03 - Débitos de notas fiscais não processadas na apuração  * 04 - Multa e juros  * 05 - Transferência de crédito de sucessão | [optional] |
+| **tp_nf_debito** | **String** | Tipo de Nota de Débito. | [optional] |
 | **tp_nf_credito** | **String** | Tipo de Nota de Crédito. | [optional] |
 | **ind_final** | **Integer** | Indica operação com consumidor final:  * 0 - Não  * 1 - Consumidor Final |  |
 | **ind_pres** | **Integer** | Indicador de presença do comprador no estabelecimento comercial no momento da operação:  * 0 - Não se aplica (ex.: Nota Fiscal complementar ou de ajuste)  * 1 - Operação presencial  * 2 - Não presencial, internet  * 3 - Não presencial, teleatendimento  * 4 - NFC-e entrega em domicílio  * 5 - Operação presencial, fora do estabelecimento  * 9 - Não presencial, outros |  |
@@ -48,6 +49,7 @@ instance = NuvemFiscalClient::NfeSefazIde.new(
   n_nf: null,
   dh_emi: null,
   dh_sai_ent: null,
+  d_prev_entrega: null,
   tp_nf: null,
   id_dest: null,
   c_mun_fg: null,

@@ -8,6 +8,7 @@
 | **g_ibs** | [**NfeSefazGIBS**](NfeSefazGIBS.md) |  | [optional] |
 | **g_cbs** | [**NfeSefazIBSCBSMonoTotGCBS**](NfeSefazIBSCBSMonoTotGCBS.md) |  | [optional] |
 | **g_mono** | [**NfeSefazGMono**](NfeSefazGMono.md) |  | [optional] |
+| **g_estorno_cred** | [**NfeSefazGEstornoCred**](NfeSefazGEstornoCred.md) |  | [optional] |
 
 ## Example
 
@@ -18,7 +19,8 @@ instance = NuvemFiscalClient::NfeSefazIBSCBSMonoTot.new(
   v_bcibscbs: null,
   g_ibs: null,
   g_cbs: null,
-  g_mono: null
+  g_mono: null,
+  g_estorno_cred: null
 )
 ```
 

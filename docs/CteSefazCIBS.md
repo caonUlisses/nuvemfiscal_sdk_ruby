@@ -7,11 +7,9 @@
 | **v_bc** | **Float** | Valor do BC. |  |
 | **g_ibsuf** | [**CteSefazGIBSUF**](CteSefazGIBSUF.md) |  |  |
 | **g_ibs_mun** | [**CteSefazGIBSMun**](CteSefazGIBSMun.md) |  |  |
-| **v_ibs** | **Float** | Valor do IBS (soma de vIBSUF e vIBSMun). |  |
+| **v_ibs** | **Float** | Valor do IBS. |  |
 | **g_cbs** | [**CteSefazGCBS**](CteSefazGCBS.md) |  |  |
 | **g_trib_regular** | [**CteSefazTribRegular**](CteSefazTribRegular.md) |  | [optional] |
-| **g_ibs_cred_pres** | [**CteSefazCredPres**](CteSefazCredPres.md) |  | [optional] |
-| **g_cbs_cred_pres** | [**CteSefazCredPres**](CteSefazCredPres.md) |  | [optional] |
 | **g_trib_compra_gov** | [**CteSefazTribCompraGov**](CteSefazTribCompraGov.md) |  | [optional] |
 
 ## Example
@@ -26,8 +24,6 @@ instance = NuvemFiscalClient::CteSefazCIBS.new(
   v_ibs: null,
   g_cbs: null,
   g_trib_regular: null,
-  g_ibs_cred_pres: null,
-  g_cbs_cred_pres: null,
   g_trib_compra_gov: null
 )
 ```
